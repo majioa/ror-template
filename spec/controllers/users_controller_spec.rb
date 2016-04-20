@@ -24,11 +24,12 @@ RSpec.describe UsersController, type: :controller do
   # User. As you add validations to User, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    { name: FFaker::Name.name }
+    { email: Faker::Internet.email, password: '12345678',
+       password_confirmation: '12345678' }
   }
 
   let(:invalid_attributes) {
-    { name: nil }
+    { email: nil }
   }
 
   # This should return the minimal set of values that should be in the session
@@ -88,13 +89,9 @@ RSpec.describe UsersController, type: :controller do
     end
 
     context "with invalid params" do
-      it "assigns a newly created but unsaved user as @user" do
+      it "assigns a newly created but unsaved user as @user, and renders new" do
         post :create, {:user => invalid_attributes}, valid_session
         expect(assigns(:user)).to be_a_new(User)
-      end
-
-      it "re-renders the 'new' template" do
-        post :create, {:user => invalid_attributes}, valid_session
         expect(response).to render_template("new")
       end
     end
@@ -103,7 +100,7 @@ RSpec.describe UsersController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        { name: FFaker::Name.name }
+        { email: Faker::Internet.email }
       }
 
       it "updates the requested user" do
@@ -127,15 +124,10 @@ RSpec.describe UsersController, type: :controller do
     end
 
     context "with invalid params" do
-      it "assigns the user as @user" do
+      it "assigns the user as @user and render edit template" do
         user = User.create! valid_attributes
         put :update, {:id => user.to_param, :user => invalid_attributes}, valid_session
         expect(assigns(:user)).to eq(user)
-      end
-
-      it "re-renders the 'edit' template" do
-        user = User.create! valid_attributes
-        put :update, {:id => user.to_param, :user => invalid_attributes}, valid_session
         expect(response).to render_template("edit")
       end
     end

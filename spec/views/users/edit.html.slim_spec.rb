@@ -11,8 +11,8 @@ RSpec.describe "users/edit", type: :view do
     it do
       assert_select "form[action=?][method=?]", user_path(@user), "post" do
         assert_select "input[name=?]", "_method"
-        assert_select "label[for=?]", "user_name"
-        assert_select "input[name=?]", "user[name]"
+        assert_select "label[for=?]", "user_email"
+        assert_select "input[name=?]", "user[email]"
         assert_select "input[name=?]", "commit"
       end
     end

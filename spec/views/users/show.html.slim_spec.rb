@@ -8,7 +8,7 @@ RSpec.describe "users/show", type: :view do
   end
 
   context "renders attributes and links" do
-    it { expect(rendered).to match("Hail, #{@user.name}") }
+    it { expect(rendered).to match("Hail, #{@user.email}") }
     it { expect(rendered).to match("Edit") }
     it { expect(rendered).to match("Back") }
   end

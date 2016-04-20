@@ -59,7 +59,7 @@ class UsersController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def user_params
-    params.fetch(:user, {}).permit(:name)
+    params.fetch(:user, {}).permit(:email, :password, :password_confirmation)
   end
 
   def render_error
@@ -72,8 +72,6 @@ class UsersController < ApplicationController
   def render_success
     respond_to do |format|
       format.html { redirect_to @user, notice: t(action_name) }
-#         'User was successfully created.'
-#      'User was successfully updated.'
       format.json { render :show, status: :created, location: @user }
     end
   end

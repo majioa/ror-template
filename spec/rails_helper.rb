@@ -12,7 +12,7 @@ require 'database_cleaner'
 require 'capybara/rspec'
 require 'capybara/webkit'
 require 'shoulda/matchers'
-require 'ffaker'
+require 'faker'
 require 'pry'
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -85,7 +85,7 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
   #config.include Devise::TestHelpers, type: :controller
   #config.include Devise::TestHelpers, type: :view
-  config.wait_timeout = 3 # seconds, rspec-wait
+  config.wait_timeout = 5 # seconds, rspec-wait
 
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction

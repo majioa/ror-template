@@ -36,10 +36,12 @@ gem 'draper'
 
 gem 'slim-rails'
 
+gem 'devise'
+
 group :development, :test do
    gem 'pry-rails'
    gem 'factory_girl_rails'
-   gem 'ffaker'
+   gem 'faker'
    gem 'spring'
    gem 'spring-commands-rspec'
 end

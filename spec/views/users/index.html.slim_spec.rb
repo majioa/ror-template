@@ -13,7 +13,7 @@ RSpec.describe "users/index", type: :view do
     it do
       @users.each do |user|
         assert_select "tr#user-#{user.id}" do
-          assert_select "td.name"
+          assert_select "td.email"
           assert_select "td.joined_at"
           assert_select "td a[href='#{user_path(user)}']"
           assert_select "td a[href='#{edit_user_path(user)}']"
