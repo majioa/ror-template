@@ -7,7 +7,7 @@ gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.2.2'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.3'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails-html-sanitizer', '~> 1.0.4'
 
 # Fix CVEs
-gem 'nokogiri', '~> 1.8.1'
+gem 'nokogiri', '~> 1.10.4'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -39,14 +39,14 @@ gem 'nokogiri', '~> 1.8.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'draper'
+gem 'draper', '>= 3.0.1'
 
-gem 'slim-rails'
+gem 'slim-rails', '>= 3.2.0'
 
 group :development, :test do
-   gem 'rspec-rails', '~> 3.8'
+   gem 'rspec-rails', '~> 3.8', '>= 3.8.1'
    gem 'pry-rails'
-   gem 'factory_girl_rails'
+   gem 'factory_girl_rails', '>= 4.9.0'
    gem 'faker'
    gem 'ffaker'
    gem 'spring'
@@ -54,11 +54,11 @@ group :development, :test do
 end
 
 group :test do
-   gem 'rails-controller-testing'
+   gem 'rails-controller-testing', '>= 1.0.4'
    gem 'rspec-wait'
    gem 'shoulda-matchers', '~> 4.0.0.rc1'
    gem 'database_cleaner'
-   gem 'capybara'
-   gem 'capybara-webkit'
+   gem 'capybara', '>= 3.12.0'
+   gem 'capybara-webkit', '>= 1.15.1'
 end
 
