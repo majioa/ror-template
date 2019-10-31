@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.2'
+gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.2.2'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '>= 4.3.3'
+gem 'jquery-rails', '>= 4.3.5'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -39,12 +39,12 @@ gem 'nokogiri', '~> 1.10.4'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'draper', '>= 3.0.1'
+gem 'draper', '>= 3.1.0'
 
 gem 'slim-rails', '>= 3.2.0'
 
 group :development, :test do
-   gem 'rspec-rails', '~> 3.8', '>= 3.8.1'
+   gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
    gem 'pry-rails'
    gem 'factory_girl_rails', '>= 4.9.0'
    gem 'faker'
