@@ -7,7 +7,7 @@ gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 5.1', '>= 5.1.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails-html-sanitizer', '~> 1.0.4'
 
 # Fix CVEs
-gem 'nokogiri', '~> 1.10.4'
+gem 'nokogiri', '~> 1.10.5'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -44,7 +44,7 @@ gem 'draper', '>= 3.1.0'
 gem 'slim-rails', '>= 3.2.0'
 
 group :development, :test do
-   gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
+   gem 'rspec-rails', '~> 3.8', '>= 3.8.3'
    gem 'pry-rails'
    gem 'factory_girl_rails', '>= 4.9.0'
    gem 'faker'
@@ -58,7 +58,7 @@ group :test do
    gem 'rspec-wait'
    gem 'shoulda-matchers', '~> 4.0.0.rc1'
    gem 'database_cleaner'
-   gem 'capybara', '>= 3.12.0'
+   gem 'capybara', '>= 3.28.0'
    gem 'capybara-webkit', '>= 1.15.1'
 end
 
