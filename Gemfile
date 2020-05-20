@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -20,7 +20,7 @@ gem 'jquery-rails', '>= 4.3.5'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.8', '>= 2.8.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 1.0.0', group: :doc
 
@@ -39,7 +39,7 @@ gem 'nokogiri', '~> 1.10.8'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'draper', '>= 3.1.0'
+gem 'draper', '>= 4.0.0'
 
 gem 'slim-rails', '>= 3.2.0'
 
@@ -49,14 +49,14 @@ group :development, :test do
    gem 'factory_girl_rails', '>= 4.9.0'
    gem 'faker'
    gem 'ffaker'
-   gem 'spring'
-   gem 'spring-commands-rspec'
+   gem 'spring', '>= 2.0.2'
+   gem 'spring-commands-rspec', '>= 1.0.4'
 end
 
 group :test do
    gem 'rails-controller-testing', '>= 1.0.4'
    gem 'rspec-wait'
-   gem 'shoulda-matchers', '~> 4.0.0.rc1'
+   gem 'shoulda-matchers', '~> 4.0.1.0'
    gem 'database_cleaner'
    gem 'capybara', '>= 3.28.0'
    gem 'capybara-webkit', '>= 1.15.1'
