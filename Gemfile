@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.2.2'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '>= 4.3.5'
+gem 'jquery-rails', '>= 4.4.0'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -39,7 +39,7 @@ gem 'nokogiri', '~> 1.10.8'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'draper', '>= 4.0.0'
+gem 'draper', '>= 4.0.1'
 
 gem 'slim-rails', '>= 3.2.0'
 
@@ -58,7 +58,7 @@ group :test do
    gem 'rspec-wait'
    gem 'shoulda-matchers', '~> 4.0.1.0'
    gem 'database_cleaner'
-   gem 'capybara', '>= 3.28.0'
+   gem 'capybara', '>= 3.31.0'
    gem 'capybara-webkit', '>= 1.15.1'
 end
 
