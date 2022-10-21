@@ -28,7 +28,7 @@ gem 'sdoc', '~> 1.0.0', group: :doc
 gem 'rails-html-sanitizer', '~> 1.4.3'
 
 # Fix CVEs
-gem 'nokogiri', '~> 1.13.6'
+gem 'nokogiri', '~> 1.13.9'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
