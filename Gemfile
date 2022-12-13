@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.8', '>= 2.8.0'
 gem 'sdoc', '~> 1.0.0', group: :doc
 
 # Fix CVE-2018-8048
-gem 'rails-html-sanitizer', '~> 1.4.3'
+gem 'rails-html-sanitizer', '~> 1.4.4'
 
 # Fix CVEs
 gem 'nokogiri', '~> 1.13.10'
